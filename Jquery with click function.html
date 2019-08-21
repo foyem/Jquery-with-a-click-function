@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise</title>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <style type="text/css">
+
+        #greenCircle{
+
+            height: 200px;
+            width: 200px;
+            background-color:green;
+            border-radius:50%;
+            margin:50px;
+
+        }
+
+        .redBox {
+            height:200px;
+            width:200px;
+            background-color:red;
+            margin:50px;
+        }
+
+        p{
+            margin-left:10px;
+            font-size:30px;
+            font-weight:bold;
+            font-family:Tahoma, Geneva, Verdana, 'sans-serif'
+
+        }
+    
+    </style>
+
+</head>
+<body>
+
+    <div id = "greenCircle" ></div>   
+
+    <p id="gcp" >This is a green circle</p>
+
+    <div class = "redBox" ></div>
+
+    <p id="rcp" >This is a red square</p>
+
+    <div class ="redBox" ></div>
+
+    <p id="rcp" >This is a red square</p>
+
+    <script type="text/javascript">
+    
+        $("#greenCircle").click(function(){
+            $("#gcp").html("You have clicked on a green circle");
+        });
+    
+        $(".redBox").click(function(){
+            $("#rcp").html("You have clicked on a red square")
+        });
+    
+    </script>
+
+
+
+</body>
+</html>
